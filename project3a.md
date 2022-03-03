@@ -88,9 +88,10 @@ Go into todo directory, Install moongose, a no-sql database and create todo.js f
 mkdir models && cd models && touch todo.js
 
 ```
+
 MONGODB Database
 mLab provide Mongodb as a DBaaS, click [here](https://www.mongodb.com/atlas-signup-from-mlab) to sign up
 Create an account and then setup your project with it database
 Copy the connection string as seen below
 
-[moongose connection string](connection-string-mybase.jpg)
+![moongose connection string](connection-string-mybase.jpg)
