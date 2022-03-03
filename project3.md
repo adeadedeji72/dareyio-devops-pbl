@@ -71,7 +71,7 @@ Our app should be able to
 * Remove completed tasks (DELETE)
 
 in the todo directory, create routes directory and move into it
-```
+
 mkdir routes && cd routes
 
 create api.js file and populate it
@@ -88,9 +88,64 @@ Go into todo directory, Install moongose, a no-sql database and create todo.js f
 mkdir models && cd models && touch todo.js
 
 ```
-MONGODB Database
+
+12. MONGODB Database
 mLab provide Mongodb as a DBaaS, click [here](https://www.mongodb.com/atlas-signup-from-mlab) to sign up
 Create an account and then setup your project with it database
 Copy the connection string as seen below
 
-[moongose connection string](connection-string-mybase.jpg)
+moongose connection string
+
+![moongose connection string](connection-string-mybase.jpg)
+
+Copy and paste the content of the connection string into .env file you will create in todo directory
+Update the content of index.js file to reflect that **.env** file is being used for database connection purposes
+
+13. Run the engine again with 
+```
+node index.js
+```
+14. POSTMAN 
+Is a browser on steroids. It will be used to test the API
+We will perform CRUD (Creat, Read, Update and Delete)
+
+See the screenshots below to see how it is done with Postman
+
+POST
+![POST](postman-post.jpg)
+
+GET
+![GET](postman-get.jpg)
+
+DELETE
+![DELETE](postman-delete.jpg)
+
+15. FRONTEND
+
+From the todo directory, create a user interface for a web client (browser) with
+```
+npx create-react-app client
+```
+this will create a client directory and add all react files
+
+install concurrently to allow miltiple simultenous commands from same terminal and nodemon to monitor the server
+```
+npm install concurrently --save-dev
+
+npm install nodemon --save-dev
+```
+
+Install axios
+```
+npm install axios
+```
+Populate the files with appropriate contents
+
+
+Open port 3000 for incoming TCP traffic
+Set brower to your Public IP and port 3000
+ip-address:3000
+
+App Page
+![](project3-app-page.jpg
+)
