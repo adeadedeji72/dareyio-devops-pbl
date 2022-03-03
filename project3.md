@@ -35,3 +35,59 @@ sudo apt-get install -y nodejs
 
 ```
 mkdir todo && cd todo
+
+7. Run command to initialise the project and place package.json in the directory. Provide appropriate responses as the initialisation progresses
+```
+npm init
+
+8. Install ExpressJS
+
+```
+npm install express
+```
+create index.js file
+
+```
+touch index.js
+```
+
+9. Install dotenv
+```
+npm install dotenv
+```
+populate the index.js file
+
+Run node.js with
+```
+node index.js
+```
+Success is indicated by **Server running on port 5000** message
+
+10. **Routes**
+
+Our app should be able to
+* Create a task (POST)
+* Display list of tasks (GET)
+* Remove completed tasks (DELETE)
+
+in the todo directory, create routes directory and move into it
+```
+mkdir routes && cd routes
+
+create api.js file and populate it
+
+```
+touch api.js
+```
+
+11. To make our app interactive, we need *Models*
+
+
+Go into todo directory, Install moongose, a no-sql database and create todo.js file
+```
+mkdir models && cd models && touch todo.js
+
+```
+*MONGODB Database*
+12. mLab provide Mongodb as a DBaaS, click [here](https://www.mongodb.com/atlas-signup-from-mlab) to sign up
+
